@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎉 Welcome to JavaScript Playground!</h1>
+  </header>
+
+  <!-- Interactive Button -->
+  <section>
+    <button id="changeColorBtn">Click me to change text & color</button>
+    <p id="colorText">Hello, I'm plain... for now 😐</p>
+  </section>
+
+  <!-- Image Slideshow -->
+  <section class="gallery">
+    <img id="galleryImage" src="https://via.placeholder.com/300" alt="Gallery" />
+    <button onclick="nextImage()">Next</button>
+  </section>
+
+  <!-- Accordion -->
+  <section>
+    <h2 onclick="toggleAccordion()">What is this playground?</h2>
+    <div id="accordionContent" class="hidden">
+      <p>It's where magic happens using JavaScript! 🪄</p>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section>
+    <form id="signupForm">
+      <h3>Signup Form</h3>
+      <label>Email: <input type="email" id="email" required></label><br/>
+      <label>Password: <input type="password" id="password" required></label><br/>
+      <button type="submit">Submit</button>
+      <p id="formFeedback"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
